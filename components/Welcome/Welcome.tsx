@@ -14,7 +14,12 @@ export function Welcome() {
             onBlur={() => store.closeDropdown()}
           />
         </Combobox.Target>
-        <Combobox.Dropdown></Combobox.Dropdown>
+        <Combobox.Dropdown>
+          <Combobox.Options aria-label="test">
+            <Combobox.Option value="react">React</Combobox.Option>
+            <Combobox.Option value="vue">Vue</Combobox.Option>
+          </Combobox.Options>
+        </Combobox.Dropdown>
       </Combobox>
     </>
   );
